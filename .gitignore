@@ -33,6 +33,7 @@ build/
 ### React Settings ###
 
 /REACTTEST/React/node_modules/
+/REACTTEST/React/srcHolder/*
 /REACTTEST/React/package.json
 /REACTTEST/React/package-lock.json
 /REACTTEST/React/README.md
