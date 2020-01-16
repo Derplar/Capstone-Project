@@ -34,6 +34,7 @@ build/
 
 /REACTTEST/React/node_modules/
 /REACTTEST/React/srcHolder/*
+!/REACTTEST/React/srcHolder/.gitkeep
 /REACTTEST/React/package.json
 /REACTTEST/React/package-lock.json
 /REACTTEST/React/README.md
