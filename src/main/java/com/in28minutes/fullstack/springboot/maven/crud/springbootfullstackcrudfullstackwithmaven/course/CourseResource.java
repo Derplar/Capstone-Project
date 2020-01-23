@@ -39,7 +39,9 @@ public class CourseResource {
   //public String getButton (@RequestBody int id)
   public String getButton() 
   {
-	  return "Life, at any cost!";
+	  StringBroker broker = new StringBroker();
+	  
+	  return broker.getString();
 	  //return courseManagementService.findById(id);
   }
 
