@@ -44,7 +44,7 @@ https://nodejs.org/en/
 
 The default for each option should be fine.
 
-Navigate to the repository location in your computer, go into web/react/src and copy all contents into the srcHolder, then delete src.
+Navigate to the repository location in your computer, go into reactapp/reactapp/ and copy all contents into the srcHolder, then delete all files in reactapp/reactapp/
 
 Open up the command line terminal and navigate INTO the web folder.
 
@@ -56,6 +56,6 @@ npm add axios
 
 This will install all necessary files to your local machine.  These files will not be pushed
 
-Then take the files in srcHolder and replace src with them.
+Then delete everything in reactapp/reactapp/src and replace the contents with the srcHolder contents
 
-That's it!  (Until the Maven part)
+That's it!
