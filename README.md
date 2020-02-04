@@ -44,13 +44,13 @@ https://nodejs.org/en/
 
 The default for each option should be fine.
 
-Navigate to the repository location in your computer, go into reactapp/reactapp/ and copy all contents into the srcHolder, then delete all files in reactapp/reactapp/
+Navigate to the repository location in your computer, go into reactapp/reactapp/src and copy all contents into the srcHolder, then delete all files in reactapp/reactapp/
 
-Open up the command line terminal and navigate INTO the web folder.
+Open up the command line terminal and navigate back one directory, back to reactapp/
 
 then type in the command
 
-npx create-react-app react
+npx create-react-app reactapp
 
 npm add axios
 
