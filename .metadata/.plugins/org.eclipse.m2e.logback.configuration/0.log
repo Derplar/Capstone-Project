@@ -501,3 +501,4 @@
 2020-02-04 12:27:33,519 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\763199\Documents\GitProjects\Capstone-Project\src\main\resources
 2020-02-04 12:27:33,520 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-02-04 12:27:33,520 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\763199\Documents\GitProjects\Capstone-Project\src\test\resources
+2020-02-04 15:19:11,013 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
