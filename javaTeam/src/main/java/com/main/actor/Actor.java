@@ -4,9 +4,6 @@
 package com.main.actor;
 
 import java.sql.Date;
-import java.util.Calendar;
-
-import javax.print.attribute.standard.DateTimeAtCompleted;
 
 /**
  * @author cuong
@@ -31,12 +28,6 @@ public class Actor
 	protected Date 	dateOfBirth;
 	protected boolean state;
 	
-	
-	public Actor()
-	{
-		
-	}
-
 	public Actor(int id, String role, String lastName, String firstName, String street, String houseNumber,
 			String unitNumber, String city, String province, String postalCode, String country, String phoneNumber,
 			String email, String password, int dateOfBirth, boolean state) {
@@ -58,7 +49,6 @@ public class Actor
 		
 		this.state = state;
 	}
-	
 	public int getId() {
 		return id;
 	}
@@ -149,6 +139,7 @@ public class Actor
 	public void setState(boolean state) {
 		this.state = state;
 	}
+
 	public String getProvince() {
 		return province;
 	}
