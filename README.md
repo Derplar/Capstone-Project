@@ -52,6 +52,8 @@ then type in the command
 
 npx create-react-app reactapp
 
+After it's done installing, go into the reactapp folder, so you're in reactapp/reactapp
+
 npm add axios
 
 This will install all necessary files to your local machine.  These files will not be pushed
