@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\763199\Documents\GitProjects\javaTeam"/>
 			<item value="C:\Users\763199\Documents\GitProjects\Capstone-Project"/>
 		</list>
 		<list key="projectNameTemplate">
