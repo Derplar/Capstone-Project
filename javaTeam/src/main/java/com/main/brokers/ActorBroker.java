@@ -3,7 +3,13 @@
  */
 package com.main.brokers;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import com.main.bokerInterfaces.ActorBrokerInterface;
+import com.main.databaseConnection.JDBCConnection;
 
 /**
  * @author Cuong Nguyen, Chris Boot, Nguyen Khanh Duy Phan, Shawn Kaldenbach
@@ -23,8 +29,64 @@ public class ActorBroker implements ActorBrokerInterface {
 	 */
 	@Override
 	public boolean checkCredential(String email, String password) throws NullPointerException {
-		// TODO Auto-generated method stub
-		return false;
+		JDBCConnection pool = JDBCConnection.createConnection();
+		Connection con = pool.getConnection();
+		String actorEmail = null;
+		String actorPassword = null;
+
+		boolean actorState = false;
+		String query = "SELECT * FROM actor WHERE email_login = ?";
+		
+		PreparedStatement ps = null;
+		ResultSet rs = null ; 
+		
+		try {
+			ps = con.prepareStatement(query);
+			ps.setString(1, email);
+			rs = ps.executeQuery();
+			while(rs.next())
+			{
+
+				actorEmail = rs.getString("email_login");
+				actorPassword = rs.getString("password");
+				actorState = rs.getBoolean("active");
+			}
+			if(actorEmail == null)
+			{
+				return false;
+			}
+			else
+			{
+				if(actorPassword.equals(password) == true &&  actorState == true)
+				{
+					return true;
+				}
+				else 
+				{
+					return false;
+				}
+			}
+			
+			
+		} catch (SQLException e) {
+			System.out.println("no customer with that email");
+			e.printStackTrace();
+			return false;
+			
+		}finally
+		{
+			pool.clearConnection(con);
+			try {
+				rs.close();
+				ps.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+		
 	}
 
 }
